@@ -8,6 +8,7 @@ Currently, Achord is not hosted on any other domain, so instead runs on a localh
 the respective API keys, and initializing these folders using yarn or npm. Running them by similar means will lead to the application being displayed at
 localhost:3000. Required steps:
 - Download folder, `cd` into `achord` and `express-server` and call `yarn init` (or the `npm` equivalent) in both.
+- Use `yarn add react-scripts` within the achord file so using `yarn run` works after the init call.
 
 ## Known Bugs and Limitations
 - The tracks connecting different artists and their associated images sometimes appear in an incorrect order if clicks are done too quickly in succession.
