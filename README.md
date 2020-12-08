@@ -6,7 +6,8 @@ A user can specify the source artist and the target artist, and the app displays
 ## Using the Application
 Currently, Achord is not hosted on any other domain, so instead runs on a localhost. Running this requires downloading the folders, configuring .env files for
 the respective API keys, and initializing these folders using yarn or npm. Running them by similar means will lead to the application being displayed at
-localhost:3000. 
+localhost:3000. Required steps:
+- Download folder, `cd` into `achord` and `express-server` and call `yarn init` (or the `npm` equivalent) in both.
 
 ## Known Bugs and Limitations
 - The tracks connecting different artists and their associated images sometimes appear in an incorrect order if clicks are done too quickly in succession.
