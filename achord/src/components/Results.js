@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
-import { authorize } from "/Users/swetabhchangkakoti/Desktop/Code/achord_app/achord/src/utils/SpotifyUtils.js";
+import { authorize } from "../SpotifyUtils.js";
 import Spotify from "spotify-web-api-js";
 
 const spotifyApi = new Spotify();

@@ -3,7 +3,8 @@ import { useHistory } from "react-router-dom";
 
 import styled from "styled-components";
 import Spotify from "spotify-web-api-js";
-import { authorize, getCollabs } from "/Users/swetabhchangkakoti/Desktop/Code/achord_app/achord/src/utils/SpotifyUtils.js"
+// REPLACE "/Users/swetabhchangkakoti/Desktop/Code/" WITH YOUR PARENT DIRECTORY
+import { authorize, getCollabs } from "../SpotifyUtils.js";
 
 const axios = require("axios");
 const spotifyApi = new Spotify();
