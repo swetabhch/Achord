@@ -126,11 +126,13 @@ const ArtistInputForm = (props) => {
                 if (newTrackArtists === "") {
                     return [false, [], []];
                 }
+                // adding new artists to queue of elements in visited left to push to processed
                 newTrackArtists.forEach((trackArtist) => {
                     if (!(processed.includes(trackArtist[1])) && !(visited.map((x) => {return x[0]}).includes(trackArtist[1]))) {
                         visited.push([trackArtist[1], remDegree - 1, path.concat(trackArtist[1]), trackPath.concat(trackArtist[0])]);
                     }
                 })
+                // checking in advance if a visited artist is destArtist to save time
                 for (var i = 0; i < visited.length; i++) {
                     if (visited[i][0] === destArtist) {
                         return [true, path.concat(destArtist), trackPath.concat(visited[i][3])]
